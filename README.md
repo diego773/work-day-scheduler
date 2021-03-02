@@ -7,5 +7,6 @@
 
 
 Web Link: https://diego773.github.io/work-day-scheduler/
-Allows the user to save events for each hour of the day, each timeblock is color coded to indicate whether it is in the past, present, or future.
+Allows the user to save events for each hour of the day, 
+each time block is color coded to indicate whether it is in the past, present, or future.
 Work day scheduler
