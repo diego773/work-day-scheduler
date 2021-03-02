@@ -6,7 +6,7 @@ $(document).ready(function() {
     localStorage.setItem(time, value)
 
     })
-    
+// Function hour    
     function hourUpdater() {
     var currentHour = moment().hours()
     $(".time-block").each(function() {
@@ -25,9 +25,11 @@ $(document).ready(function() {
         }
     })
 }
+// Hour Updater
 hourUpdater();
 var interval = setInterval(hourUpdater, 15000)
 
+// Save to local storage
 $("#hour-9 .description").val(localStorage.getItem("hour-9"))
 $("#hour-10 .description").val(localStorage.getItem("hour-10"))
 $("#hour-11 .description").val(localStorage.getItem("hour-11"))
@@ -38,6 +40,7 @@ $("#hour-15 .description").val(localStorage.getItem("hour-15"))
 $("#hour-16 .description").val(localStorage.getItem("hour-16"))
 $("#hour-17 .description").val(localStorage.getItem("hour-17"))
 
+// Current day calender 
 $("#currentDay").text(moment().format("dddd, MMMM Do"))
 
 });
